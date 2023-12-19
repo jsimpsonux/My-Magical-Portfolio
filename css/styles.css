@@ -1,19 +1,24 @@
 #first-project {
-    background-image: url(../images/02-portfolio-1.jpg);
+    background-image: url('../images/02-portfolio-1.jpg');
+    background-size: cover;
 }
 
 #second-project {
-    background-image: url(images/02-portfolio-2.jpg);
+    background-image: url('../images/02-portfolio-2.jpg');
+    background-size: cover;
 }
 
 #third-project {
-    background-image: url(images/02-portfolio-3.jpg);
+    background-image: url('../images/02-portfolio-3.jpg');
+    background-size: cover;
 }
 
 #fourth-project {
-    background-image: url(images/02-portfolio-4.jpg);
+    background-image: url('../images/02-portfolio-4.jpg');
+    background-size: cover;
 }
 
 #fifth-project {
-    background-image: url(images/02-run-buddy.jpg);
+    background-image: url('../images/02-run-buddy.jpg');
+    background-size: cover;
 }
