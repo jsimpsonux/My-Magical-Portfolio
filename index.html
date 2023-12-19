@@ -12,12 +12,14 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <title>Hello, world!</title>
+    <!-- navbar nav refers to bootstrap's navigation styling, lg expands navbar on larger screens, bg-body-tertiary gives a background colour and p-5 adds padding around the element -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Jack</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- When the navbar is collapsable this is made for responsive reasons, justify-content-end aligns the content inside the div -->
           <div class="collapse navbar-collapse justify-content-end" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -36,17 +38,22 @@
   </header>
   <body>
     <div class="container">
+        <!-- mt-4 is for margin top of the content it adds 4 to the div, p-5 adds padding all around the div and content, bg-primary takes colour from the bootstrap style and adds colour to the background of the div, 
+        text-white selects the colour of the text -->
         <div class="mt-4 p-5 bg-primary text-white rounded">
           <h1 class="text-center">Hello! My name is Jack!</h1>
+          <!-- w-25 sets the width of the image at 25% of the original image size, mx-auto sets the horizontal margin of the element to auto which centers the div, d-block is equivalent to 'display: block' in csss -->
           <img src="images/Jack.png" class="w-25 rounded mx-auto d-block p-1" alt="Jack">  
         </div>
     </div>
 
+    <!-- Below here are grids that break down the sections About, Work and Contact, I used grid and set custom column sizes and rows. Within the work section I created another grid for the work -->
     <div class="container text-center mt-4 p-2">
         <div class="row">
+            <!-- col-12 is a column spreading over 12 spaces which is the maximum amount for columns -->
           <div class="col-12 p-5">
             <h3 id="About">About</h3>
-            <p>Hello! my name is Jack and welcome to my page, I hope your journey here wasn't rough? I am a techy guy who is interested in everything technology, but I mainly enjoy interactive technology and understanding human behaviour behind tech, this is my first webpage created almost from scratch, I hope you enjoy your time on my webpage! </p>
+            <p>Hello! my name is Jack and welcome to my page, I hope your journey here wasn't rough? I am a techy guy who is interested in everything technology, but I mainly enjoy interactive technology and understanding human behaviour behind tech, this is my first webpage recreated almost from scratch, I hope you enjoy your time on my webpage! </p>
           </div>
         </div>
         <div class="row">
@@ -58,7 +65,9 @@
                 </div>
               </div>
               <div class="row p-3">
+                  <!-- this code below spreads the columns over 6 out of the 12 spaces because it will share the space with another div with content spreading over the same amount -->
                 <div class="col-6 p-3" id="second-project">
+                    <!-- the text is set to light and the background colour is to a blue colour, the text will be wrapped so the container will be close to the text -->
                  <p class="text-light bg-primary text-wrap p-3" style="width: 9rem;">Second Project</p>
                 </div>
                 <div class="col-6 p-3" id="third-project">
